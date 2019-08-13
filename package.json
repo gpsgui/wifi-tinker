@@ -1,0 +1,18 @@
+{
+  "name": "wifi-tinker",
+  "productName": "wifi-tinker",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "gpsgui",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "node-wifi": "*"
+  },
+  "devDependencies": {
+    "electron": "5.0.0-beta.7"
+  }
+}
