@@ -9,6 +9,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    //frame : false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -16,6 +17,9 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
+
+  // sending an event after the window is draw
+  mainWindow.send('onCreated')
   
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
